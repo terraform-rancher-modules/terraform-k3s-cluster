@@ -1,5 +1,3 @@
-# K3s cluster for Rancher
-
 locals {
   k3s_kubeconfig_location = "/etc/rancher/k3s/k3s.yaml"
 }

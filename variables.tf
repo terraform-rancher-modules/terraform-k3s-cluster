@@ -16,7 +16,7 @@ variable "node_username" {
 variable "ssh_private_key_pem" {
   type        = string
   description = "Private key used for SSH access to the Rancher server cluster node(s)"
-  default = "~/.ssh/id_rsa"
+  default     = "~/.ssh/id_rsa"
 }
 
 variable "kubernetes_version" {
@@ -26,7 +26,7 @@ variable "kubernetes_version" {
 }
 
 variable "rke_kubeconfig_filename" {
-  type = string
+  type        = string
   description = "Kubeconfig output filename to use"
-  default = "kube_config_cluster.yml"
+  default     = "kube_config_cluster.yml"
 }
