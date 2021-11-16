@@ -11,6 +11,7 @@ variable "node_internal_ip" {
 variable "node_username" {
   type        = string
   description = "Username used for SSH access to the Rancher server cluster node"
+  default     = "ubuntu"
 }
 
 variable "ssh_private_key_pem" {
