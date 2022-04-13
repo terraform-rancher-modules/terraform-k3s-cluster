@@ -26,8 +26,14 @@ variable "kubernetes_version" {
   default     = "v1.21.4+k3s1"
 }
 
-variable "rke_kubeconfig_filename" {
+variable "kubeconfig_filename" {
   type        = string
   description = "Kubeconfig output filename to use"
-  default     = "kube_config_cluster.yml"
+  default     = "config"
+}
+
+variable "kubeconfig_filepath" {
+  type        = string
+  description = "Kubeconfig output path/dir to use"
+  default     = "~/.kube"
 }

@@ -1,3 +1,3 @@
 output "kubeconfig_location" {
-  value = local_file.kube_config_yaml.filename
+  value = "pathexpand(${var.kubeconfig_filepath})/${var.kubeconfig_filename}"
 }
